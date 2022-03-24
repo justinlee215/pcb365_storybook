@@ -12,8 +12,6 @@ import trade4 from '../public/images/trade4.jpg'
 import trade5 from '../public/images/trade5.jpg'
 import trade6 from '../public/images/trade6.jpg'
 
-import { Nav } from 'react-bootstrap'
-
 export default function Home(props) {
   console.log('hello world: ', props)
   return (
