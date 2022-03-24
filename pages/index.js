@@ -23,10 +23,8 @@ export default function Home(props) {
       </Head>
 
       <main className="main">
+        Hello World!
         <Image src={logo} ></Image>
-      </main>
-
-
         {[trade1, trade2, trade3, trade4, trade5, trade6].map((ele, i)=> {
           // console.log(ele)  
           return (
@@ -36,7 +34,7 @@ export default function Home(props) {
         )
           }
           )}
-
+      </main>
       <footer className={styles.footer}>
  
       </footer>
