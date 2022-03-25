@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 import Layout from '../components/layout/Layout'
 
@@ -12,6 +12,8 @@ import trade4 from '../public/images/trade4.jpg'
 import trade5 from '../public/images/trade5.jpg'
 import trade6 from '../public/images/trade6.jpg'
 
+import { Button } from 'react-bootstrap';
+
 export default function Home(props) {
   console.log('hello world: ', props)
   return (
@@ -21,9 +23,10 @@ export default function Home(props) {
         <meta name="description" content="CSS Big Bang" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-
       <main className="main">
-        Hello World!
+        <div className="nani">Hello World!</div>
+        <Button variant="flat" size="xxl" className={styles.flat}>ohoho</Button>
+        <div className={styles.box}>test</div>
         {/* <Image src={logo} ></Image> */}
         {[trade1, trade2, trade3, trade4, trade5, trade6].map((ele, i)=> {
           // console.log(ele)  

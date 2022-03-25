@@ -1,3 +1,24 @@
+// $primary: purple;
+// $danger: red;
+
+// @import "bootstrap";
+
+$theme-colors: (
+  "primary": blue,
+  "secondary": #833bec,
+  "success": #1ce1ac,
+  "info": #ff7d50,
+  "warning": #ffbe0b,
+  "danger": #ff007f,
+  // "light": #c0ccda,
+  "dark": #001738,
+  "pcbColorRed": #a6182d,
+  "pcbColorBlue": #002c71,
+);
+// $primary: red;
+
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
 *,
 *::before,
 *::after {
@@ -29,18 +50,29 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--off-white);
   text-decoration: none;
 }
 
 body {
-  color: var(--off-white);
-  background-color: var(--dark);
+  color: var(--dark);
+  color: $success;
+  background-color: var(--off-white);
 }
 
 h1 {
   color: var(--green);
   font-size: var(--font-size-lg);
+}
+
+h1 {
+  font-size: 3.6rem;
+  margin: 0 0 1em;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 1em 0 0.5em;
 }
 
 p {
@@ -53,18 +85,52 @@ section {
   line-height: 1.5;
 }
 
-:focus {
-  outline: 0.15rem dashed var(--off-white);
-  outline-offset: 0.25rem;
+*:focus {
+  outline: 1rem solid darkblue;
+  outline-offset: 0.15rem;
 }
 
-main:focus {
-  outline: none;
+form {
+  width: 100%;
+  max-width: 32rem; /* Or whatever width you prefer */
+  margin: auto;
 }
+
+/* main:focus {
+  outline: none;
+} */
 
 img {
   max-width: 100%;
 }
+
+// input,
+// button {
+//   color: inherit;
+//   border: 2px solid #666;
+//   padding: 0.5rem;
+//   font-size: 1rem;
+//   background: inherit;
+//   border-radius: 0.25rem;
+//   width: 100%;
+// }
+
+// button,
+// input[type="submit"] {
+//   background: #333;
+//   color: #f8f8f8;
+//   border-color: #333;
+//   width: max-content;
+//   padding: 0.5em 1em;
+//   font-weight: bold;
+//   // margin-top: 2em;
+//   font-size: 1.2rem;
+// }
+
+// input a {
+//   margin-left: 1rem;
+//   color: #555;
+// }
 
 /********************************************************************************/
 /********************************* utility global classes ***********************/
@@ -228,49 +294,6 @@ img {
   }
 } */
 
-h1 {
-  font-size: 3.6rem;
-  margin: 0 0 1em;
-}
-
-h2 {
-  font-size: 2.2rem;
-  margin: 1em 0 0.5em;
-}
-
-form {
-  width: 100%;
-  max-width: 28rem;
-}
-
-input,
-button {
-  color: inherit;
-  border: 2px solid #666;
-  padding: 0.5rem;
-  font-size: 1rem;
-  background: inherit;
-  border-radius: 0.25rem;
-  width: 100%;
-}
-
-button,
-input[type="submit"] {
-  background: #333;
-  color: #f8f8f8;
-  border-color: #333;
-  width: max-content;
-  padding: 0.5em 1em;
-  font-weight: bold;
-  margin-top: 2em;
-  font-size: 1.2rem;
-}
-
-input a {
-  margin-left: 1rem;
-  color: #555;
-}
-
 .form-group {
   margin-bottom: 1rem;
 }
@@ -302,3 +325,45 @@ input a {
 	.1-1-2 {
 		grid-template-columns: 1fr 1fr 2fr;
 	} */
+
+/* tooltip  */
+/* tell buttons links what it does  */
+
+/* shadow  */
+
+/* animation  */
+/* transition */
+
+/* loading  */
+/* use on the base of current item */
+
+/* hover  */
+/* on icon, round surrouding */
+/* tootips consistant, JS? to give extra data  */
+/* on menu, shows menu items */
+/* hover on hover, extra */
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  color: white !important;
+}
+
+.navdropdown-item {
+  color: red !important;
+}
+
+#dropdownMenu + div {
+  background-color: green !important;
+}
+
+.dropdownItem:hover {
+  color: blue !important;
+}
+
+.nav-items {
+  color: red !important;
+}
+
+// .dropdownItem {
+//   color: red !important;
+// }

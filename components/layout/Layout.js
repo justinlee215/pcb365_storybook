@@ -1,22 +1,42 @@
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, ProgressBar } from 'react-bootstrap'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import { useState } from 'react'
+
+const now = 60;
+
+const progressInstance = (
+  <ProgressBar now={now} label={`${now}%`} variant="secondary"/>
+);
+
+
 
 export default function Layout({children}) {
+  const [progress, setProgress] = useState(0)
+
+  const updateProgressHandler = setInterval(() => {
+    if (progress >= 100 ){
+     setProgress(100)
+     clearInterval(updateProgressHandler)
+    }
+    setProgress(s => s+1)
+   }, 0)
+
   return (
     <div>
+      <ProgressBar now={progress} variant="pcbColorRed" style={{borderRadius: "0"}}/>
         <header>
-                  <Navbar bg="light" expand="lg" >
+          <Navbar bg="pcbColorBlue" expand="lg" >
           <Container fluid>
-            {/* <Link href="/"><Navbar.Brand href="/"><Image
+            <Link href="/"><Navbar.Brand href="/"><Image
                 priority
-                src="/images/pcb365.png"
+                src="/images/logo_white_1.png"
                 // className={styles.logo}
-                height={66.5}
-                width={193}
+                height={56.5}
+                width={90}
                 // alt={name}
-              /></Navbar.Brand></Link> */}
+              /></Navbar.Brand></Link>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -29,7 +49,7 @@ export default function Layout({children}) {
                 <Link href="/forms/dynamicTest"><Nav.Link href="/">Commercial</Nav.Link></Link>
                 <Link href="/achieve"><Nav.Link href="/">My Achieve</Nav.Link></Link>
                 <NavDropdown title="Documentation" id="navbarScrollingDropdown">
-                <Link href="/forms/canadacustomsinvoice"><NavDropdown.Item href="#action3">Canada Customs Invoice</NavDropdown.Item></Link>
+                <Link href="/forms/canadacustomsinvoice"><NavDropdown.Item href="#action3" className="nav-items" >Canada Customs Invoice</NavDropdown.Item></Link>
                 <Link href="/forms/uscustomsinvoice"><NavDropdown.Item href="#action4">US Customs Invoice</NavDropdown.Item></Link>
                   <NavDropdown.Divider />
                   <Link href="/forms"><NavDropdown.Item href="#action5">All Documentation</NavDropdown.Item></Link>
@@ -42,7 +62,9 @@ export default function Layout({children}) {
                   className="me-2"
                   aria-label="Search"
                 />
-                <Button variant="outline-success">Search</Button>
+                 <Button style={{ marginRight: "1rem"}}>
+                 button
+                </Button>
               </Form>
             </Navbar.Collapse>
             <Link href="/"><Nav.Link>Sign In</Nav.Link></Link>
@@ -50,6 +72,7 @@ export default function Layout({children}) {
         </Navbar>
         </header>
         <main>{children}</main>
+
         <footer>footer</footer>
     </div>
   )
