@@ -4,14 +4,6 @@ import Image from 'next/image'
 
 import { useState } from 'react'
 
-const now = 60;
-
-const progressInstance = (
-  <ProgressBar now={now} label={`${now}%`} variant="secondary"/>
-);
-
-
-
 export default function Layout({children}) {
   const [progress, setProgress] = useState(0)
 
