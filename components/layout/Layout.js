@@ -18,9 +18,9 @@ export default function Layout({children}) {
 
   return (
     <div>
-      <ProgressBar sticky="top" now={progress} variant="pcbColorRed" style={{borderRadius: "0", backgroundColor: "white"}}/>
+      <ProgressBar now={progress} variant="progressiveBar" style={{ borderRadius: "0", backgroundColor: "white"}}/>
         <header>
-          <Navbar sticky="top" bg="pcbColorBlue" expand="lg" variant="dark">
+          <Navbar className="navbar" expand="lg" variant="dark" >
           <Container fluid>
             <Link href="/"><Navbar.Brand href="/" className="logo" >
               <Image
