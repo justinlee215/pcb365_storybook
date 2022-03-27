@@ -31,9 +31,6 @@ export default function Home(props) {
           return (
           <div className="largeBox" key={i}>
               <Image src={ele} width={500} height={500} priority ></Image>
-              {/* <Image src={ele} layout='fill' priority></Image> */}
-              {/* <img src={`/images/trade${i + 1}.jpg`} alt="hmm"/> */}
-
           </div>
         )
           }
