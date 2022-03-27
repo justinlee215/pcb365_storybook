@@ -36,10 +36,10 @@ export default function Layout({children}) {
                 style={{ maxHeight: '100px' }}
                 navbarScroll
               >
-                <Link href="/personal"><Nav.Link href="/personal">Personal</Nav.Link></Link>
-                <Link href="/forms/dynamic"><Nav.Link href="/">Small Business</Nav.Link></Link>
-                <Link href="/forms/dynamicTest"><Nav.Link href="/">Commercial</Nav.Link></Link>
-                <Link href="/achieve"><Nav.Link href="/">My Achieve</Nav.Link></Link>
+                <Link href="/personal"><Nav.Link href="/eforms">eForms</Nav.Link></Link>
+                <Link href="/forms/dynamic"><Nav.Link href="/shipments">Shipments</Nav.Link></Link>
+                <Link href="/forms/dynamicTest"><Nav.Link href="/">Reports</Nav.Link></Link>
+                <Link href="/achieve"><Nav.Link href="/">Contactus</Nav.Link></Link>
                 <NavDropdown title="Documentation" id="navbarScrollingDropdown">
                 <Link href="/forms/canadacustomsinvoice"><NavDropdown.Item href="#action3" className="nav-items" >Canada Customs Invoice</NavDropdown.Item></Link>
                 <Link href="/forms/uscustomsinvoice"><NavDropdown.Item href="#action4">US Customs Invoice</NavDropdown.Item></Link>
@@ -51,11 +51,11 @@ export default function Layout({children}) {
                 <FormControl
                   type="search"
                   placeholder="Search"
-                  className="me-2"
+                  className="me-1"
                   aria-label="Search"
                 />
                  <Button style={{ marginRight: "1rem"}}>
-                 button
+                 Search
                 </Button>
               </Form>
             </Navbar.Collapse>

@@ -24,13 +24,13 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <main className="main">
-        <div className="nani">Hello World!</div>
+
         <Button variant="flat" size="xxl" className={styles.flat}>ohoho</Button>
         <div className={styles.box}>test</div>
         {[trade1, trade2, trade3, trade4, trade5, trade6].map((ele, i)=> { 
           return (
           <div className="largeBox" key={i}>
-              <Image src={ele} width={500} height={500}></Image>
+              <Image src={ele} width={500} height={500} priority={true}></Image>
           </div>
         )
           }
