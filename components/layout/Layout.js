@@ -26,11 +26,13 @@ export default function Layout({children}) {
      clearInterval(updateProgressHandler)
     }
     setProgress(s => s+1)
+
+
+    
    }, 50)
 
   return (
-    <div>
-        {/* <header className="header"> */}
+    <>
           <Navbar sticky="top" className="navbar" expand="lg" variant="dark" >
             <Container fluid>
               <Link href="/"><Navbar.Brand href="/" className="logo" >
@@ -49,8 +51,9 @@ export default function Layout({children}) {
                   className="nav-section1"
                   navbarScroll
                 >
-                <CustomDropdown itemName="eForms" show={show}    onMouseEnter={showDropdown} 
-                    onMouseLeave={hideDropdown}> </CustomDropdown>
+                  <CustomDropdown itemName="eForms" className="navdropdown" show={show} onMouseEnter={showDropdown} 
+                      onMouseLeave={hideDropdown}> 
+                  </CustomDropdown>
                   <Link href="/shipments"><Nav.Link href="/shipments">Shipments</Nav.Link></Link>
                   <Link href="/reports"><Nav.Link href="/">Reports</Nav.Link></Link>
                 </Nav>
@@ -70,11 +73,9 @@ export default function Layout({children}) {
             </Container>
           </Navbar>
         <ProgressBar now={progress} variant="progressBar" style={{ borderRadius: "0", height: "1rem", backgroundColor: "white", left: "0", top: "200" }} />
-
-        {/* </header> */}
         <main>{children}</main>
 
         <footer>footer</footer>
-    </div>
+    </>
   )
 }

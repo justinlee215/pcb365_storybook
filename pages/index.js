@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import React from 'react'
 // import styles from '../styles/Home.module.scss'
 
 import Layout from '../components/layout/Layout'
@@ -17,6 +18,17 @@ import Card from '../components/card/Card'
 import { Button } from 'react-bootstrap'
 
 export default function Home(props) {
+
+    const [text, setText] = React.useState("waiting...");
+  
+    React.useEffect(() => {
+      let isCancelled = false;
+  
+      return () => {
+        isCancelled = true;
+      };
+    }, []);
+
   return (
     <Layout>
       <Head>
