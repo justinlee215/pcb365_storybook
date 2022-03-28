@@ -40,25 +40,19 @@ export default function Layout({children}) {
                   navbarScroll
                 >
                 <CustomDropdown itemName="eForms"/>
-                  <Link href="/forms/dynamic"><Nav.Link href="/shipments">Shipments</Nav.Link></Link>
-                  <Link href="/forms/dynamicTest"><Nav.Link href="/">Reports</Nav.Link></Link>
+                  <Link href="/shipments"><Nav.Link href="/shipments">Shipments</Nav.Link></Link>
+                  <Link href="/reports"><Nav.Link href="/">Reports</Nav.Link></Link>
                 </Nav>
-
-
                 <Nav className="nav-section2">
-
-
                   <NavDropdown title="Documentation" id="navbarScrollingDropdown" className="navdropdown">
                     <Link href="/forms/canadacustomsinvoice"><NavDropdown.Item href="#action3" className="nav-items" >Canada Customs Invoice</NavDropdown.Item></Link>
                     <Link href="/forms/uscustomsinvoice"><NavDropdown.Item href="#action4" className="nav-items">US Customs Invoice</NavDropdown.Item></Link>
                   <NavDropdown.Divider />
                     <Link href="/forms"><NavDropdown.Item href="#action5" className="nav-items">All Documentation</NavDropdown.Item></Link>
                   </NavDropdown>
-
-
-                  <Link href="/achieve"><Nav.Link href="/" style={{ minWidth: "100px"}} className="contactus">Contact Us</Nav.Link></Link>
+                  <Link href="/contactus"><Nav.Link href="/" style={{ minWidth: "100px"}} className="contactus">Contact Us</Nav.Link></Link>
                 </Nav>
-                <Nav className="nav-section3"><Link href="/"><Nav.Link>Log In <Person className="iconPerson" size={20}/> </Nav.Link></Link></Nav>
+                <Nav className="nav-section3"><Link href="/logIn"><Nav.Link href="/">Log In <Person className="iconPerson" size={20}/> </Nav.Link></Link></Nav>
               </Navbar.Collapse>
             </Container>
           </Navbar>
