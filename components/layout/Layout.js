@@ -3,7 +3,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../../public/images/whitelogo.png'
 import { useState } from 'react'
-import { Person } from 'react-bootstrap-icons';
+import { Person } from 'react-bootstrap-icons'
+
+import CustomDropdown from '../dropdown/CustomDropdown'
 
 export default function Layout({children}) {
   const [progress, setProgress] = useState(0)
@@ -37,7 +39,7 @@ export default function Layout({children}) {
                   className="nav-section1"
                   navbarScroll
                 >
-                  <Link href="/eforms"><Nav.Link href="/eforms"> eForms</Nav.Link></Link>
+                <CustomDropdown itemName="eForms"/>
                   <Link href="/forms/dynamic"><Nav.Link href="/shipments">Shipments</Nav.Link></Link>
                   <Link href="/forms/dynamicTest"><Nav.Link href="/">Reports</Nav.Link></Link>
                 </Nav>
@@ -46,7 +48,7 @@ export default function Layout({children}) {
                 <Nav className="nav-section2">
 
 
-                  <NavDropdown title="Documentation" id="navbarScrollingDropdown" className="navDropdown">
+                  <NavDropdown title="Documentation" id="navbarScrollingDropdown" className="navdropdown">
                     <Link href="/forms/canadacustomsinvoice"><NavDropdown.Item href="#action3" className="nav-items" >Canada Customs Invoice</NavDropdown.Item></Link>
                     <Link href="/forms/uscustomsinvoice"><NavDropdown.Item href="#action4" className="nav-items">US Customs Invoice</NavDropdown.Item></Link>
                   <NavDropdown.Divider />

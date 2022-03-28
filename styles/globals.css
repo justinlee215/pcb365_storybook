@@ -471,20 +471,26 @@ input a {
   /* background-color: lightcoral; */
 }
 
-.navDropdown {
+.navdropdown {
   background-color: lightgreen;
   /* text-align: end; */
   /* display */
 }
 
-.navDropdown-item {
+.navdropdown-menu {
+  background-color:#1ce1ac !important;
+  color:#0070f3 !important;
+  border-radius: 0;
+}
+
+.navdropdown-item {
   background-color:#1ce1ac !important;
   color:#0070f3 !important;
 }
 
-.navDropdown-item {
+.navdropdown-item: {
   color: red !important;
-  background-color:#1ce1ac !important;
+  background-color:# 1ce1ac !important;
 }
 
   .nav-link {
