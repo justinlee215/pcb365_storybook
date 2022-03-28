@@ -394,6 +394,42 @@ input a {
   margin-left: 2px;
 }
 
+.dropdown-title {
+    color: white;
+    text-decoration: none;
+    /* background-color: yellow; */
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.6rem;
+    inline-size: 1rem;
+}
+
+.dropdown-title:active,
+.dropdown-title:hover,
+.dropdown-title:checked {
+    color: white;
+    text-decoration: none;
+    /* background-color: yellow; */
+}
+
+.dropdown-title:before {
+  content: ""
+}
+
+.dropdown-header {
+  content: "";
+  background-color: yellow;
+}
+
+.dropdown-toggle:after {
+  display: none;
+}
+
 .largebox {
   position: relative;
   margin: 0 60px 0 10vw ;

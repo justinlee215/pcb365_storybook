@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Dropdown, FormControl } from "react-bootstrap"
+import { ArrowDown } from 'react-bootstrap-icons'
 
 // The forwardRef is important!!
 // Dropdown needs access to the DOM node in order to position the Menu
@@ -8,13 +9,15 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <a
         href=""
         ref={ref}
+        className="dropdown-title"
+        id="navbarScrollingDropdown"
         onClick={(e) => {
             e.preventDefault();
             onClick(e);
         }}
     >
         {children}
-        &#x25bc;
+        <ArrowDown className="iconArrowDown" size={20} /> 
     </a>
 ));
 
@@ -49,20 +52,20 @@ const CustomMenu = React.forwardRef(
     },
 );
 
-export default function CustomDropdown({itemName}) {
+export default function CustomDropdown({ itemName }) {
   return (
     <Dropdown>
-        <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+        <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components" className="dropdown-item">
             {itemName}
         </Dropdown.Toggle>
 
         <Dropdown.Menu as={CustomMenu}>
-            <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-            <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
+            <Dropdown.Item eventKey="1">Canada Customs Invoice</Dropdown.Item>
+            <Dropdown.Item eventKey="2">US Customs Invoice</Dropdown.Item>
             <Dropdown.Item eventKey="3" active>
-                Orange
+                Mexico Customs Invoice
             </Dropdown.Item>
-            <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
+            <Dropdown.Item eventKey="1">China Customs Invoice</Dropdown.Item>
         </Dropdown.Menu>
     </Dropdown>
   )
