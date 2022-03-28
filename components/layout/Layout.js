@@ -33,29 +33,29 @@ export default function Layout({children}) {
                 className="logo_image"
               /></Navbar.Brand></Link>
             <Navbar.Toggle aria-controls="navbarScroll" className="navbar-toggle"/>
-            <Navbar.Collapse id="navbarScroll">
+            <Navbar.Collapse id="navbarScroll" className="navbar-collapse">
               <Nav
-              justify
-              // className="justify-content-start" 
-                // className="me-auto my-10 my-lg-0"
+                className="nav-section1"
                 navbarScroll
-                style={{marginLeft: "80px", width: "60%"}}
               >
                 <Link href="/eforms"><Nav.Link href="/eforms"> eForms</Nav.Link></Link>
                 <Link href="/forms/dynamic"><Nav.Link href="/shipments">Shipments</Nav.Link></Link>
                 <Link href="/forms/dynamicTest"><Nav.Link href="/">Reports</Nav.Link></Link>
               </Nav>
-              <Nav justify style={{width: "25%"}}>
-                <NavDropdown title="Documentation" id="navbarScrollingDropdown">
+              <Nav className="nav-section2">
+
+
+                <NavDropdown title="Documentation" id="navbarScrollingDropdown" className="navDropdown">
                 <Link href="/forms/canadacustomsinvoice"><NavDropdown.Item href="#action3" className="nav-items" >Canada Customs Invoice</NavDropdown.Item></Link>
                 <Link href="/forms/uscustomsinvoice"><NavDropdown.Item href="#action4">US Customs Invoice</NavDropdown.Item></Link>
                   <NavDropdown.Divider />
                   <Link href="/forms"><NavDropdown.Item href="#action5">All Documentation</NavDropdown.Item></Link>
                 </NavDropdown>
 
-                <Link href="/achieve"><Nav.Link href="/">Contact Us</Nav.Link></Link>
+                
+                <Link href="/achieve"><Nav.Link href="/" style={{ minWidth: "100px"}} className="contactus">Contact Us</Nav.Link></Link>
               </Nav>
-                <Nav fill style={{ width: "10%", marginLeft: "30px", marginRight: "10px"}}><Link href="/"><Nav.Link>Log In <Person style={{ marginLeft: "10px"}}size={23}/> </Nav.Link></Link></Nav>
+              <Nav className="nav-section3"><Link href="/"><Nav.Link>Log In <Person className="iconPerson" size={23}/> </Nav.Link></Link></Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>

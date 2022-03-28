@@ -59,7 +59,7 @@ a {
 
 body {
   color: var(--dark);
-  color: $success;
+  /* color: $success; */
 }
 
 h1 {
@@ -363,9 +363,15 @@ input a {
 /* on menu, shows menu items */
 /* hover on hover, extra */
 
+
+/* navbar, nav */
 .nav-link {
   font-family: "Roboto", sans-serif;
   color: white !important;
+  text-align: center;
+}
+.contactus {
+  text-align: end;
 }
 
 .navbar {
@@ -374,6 +380,13 @@ input a {
 
 .navdropdown-item {
   color: red !important;
+}
+
+.navbar-collapse {
+}
+
+.navDropdown {
+  background-color: lightblue;
 }
 
 .navbar-toggle {
@@ -385,18 +398,8 @@ input a {
   transition: ease-in-out 0.2s;
 }
 
-@media (min-width: 600px) { 
-  .nav-section1 {
-    margin-left: 10rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .nav-section2 {
-    margin: 1rem;
-    display: flex;
-  }
+.iconPerson {
+  margin-left: 10px;
 }
 
 .largebox {
@@ -466,10 +469,37 @@ input a {
   }
 }
 
-.nav-items {
-  color: red !important;
-}
+@media (min-width: 992px) { 
+  .nav-link {
+    width: 100%;
+  }
 
-/* // .dropdownItem {
-//   color: red !important;
-// } */
+  #navbarScrollingDropdown {
+    width: 100%;
+    /* background-color: #002c71; */
+    margin: 0 auto;
+  }
+
+  .nav-section1 {
+    margin-left: 5rem;
+    width: 60%;
+    /* background-color: lightblue; */
+  }
+  
+  .nav-section2 {
+    margin-left: 1rem;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  .nav-section3 {
+    margin-left: 1rem;
+    width: 10%;
+    /* background-color: lightgreen; */
+    min-width: 100px;
+
+  }
+}
