@@ -26,7 +26,7 @@ export default function Home(props) {
       </Head>
       <main className="main">
         <div className="largebox">
-            <Image src={trade3} width={1050} height={650} priority ></Image>
+            <Image src={trade2} width={1050} height={650} priority ></Image>
             <Card />
         </div>
       </main>

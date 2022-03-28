@@ -88,6 +88,11 @@ section {
   line-height: 1.5;
 }
 
+.header {
+  position: relative;
+  height: 500px;
+}
+
 *:focus {
   outline: 0.5rem solid pcbColorRed;
   outline-offset: 0.15rem;
@@ -154,7 +159,7 @@ input a {
   // position: "relative" */
 }
 
-.bg-progressiveBar {
+.bg-progressBar {
   background-color: #a6182d !important;
 }
 
@@ -370,23 +375,10 @@ input a {
   color: white !important;
   text-align: center;
 }
-.contactus {
-  text-align: end;
-}
 
 .navbar {
   background-color: #002c71;
-}
-
-.navdropdown-item {
-  color: red !important;
-}
-
-.navbar-collapse {
-}
-
-.navDropdown {
-  background-color: lightblue;
+  /* height: 100px; */
 }
 
 .navbar-toggle {
@@ -399,7 +391,7 @@ input a {
 }
 
 .iconPerson {
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
 .largebox {
@@ -470,6 +462,31 @@ input a {
 }
 
 @media (min-width: 992px) { 
+
+.contactus {
+  text-align: end;
+}
+
+.nav-section2 {
+  /* background-color: lightcoral; */
+}
+
+.navDropdown {
+  background-color: lightgreen;
+  /* text-align: end; */
+  /* display */
+}
+
+.navDropdown-item {
+  background-color:#1ce1ac !important;
+  color:#0070f3 !important;
+}
+
+.navDropdown-item {
+  color: red !important;
+  background-color:#1ce1ac !important;
+}
+
   .nav-link {
     width: 100%;
   }
@@ -491,7 +508,7 @@ input a {
     width: 30%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
   }
 
