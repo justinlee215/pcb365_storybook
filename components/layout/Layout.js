@@ -8,6 +8,16 @@ import { Person } from 'react-bootstrap-icons'
 import CustomDropdown from '../dropdown/CustomDropdown'
 
 export default function Layout({children}) {
+  const [show, setShow] = useState(false)
+
+  const showDropdown = (e)=>{
+      setShow(!show)
+  }
+
+  const hideDropdown = e => {
+      setShow(false)
+  }
+
   const [progress, setProgress] = useState(0)
 
   const updateProgressHandler = setInterval(() => {
@@ -16,7 +26,7 @@ export default function Layout({children}) {
      clearInterval(updateProgressHandler)
     }
     setProgress(s => s+1)
-   }, 0)
+   }, 50)
 
   return (
     <div>
@@ -39,12 +49,15 @@ export default function Layout({children}) {
                   className="nav-section1"
                   navbarScroll
                 >
-                <CustomDropdown itemName="eForms"/>
+                <CustomDropdown itemName="eForms" show={show}    onMouseEnter={showDropdown} 
+                    onMouseLeave={hideDropdown}> </CustomDropdown>
                   <Link href="/shipments"><Nav.Link href="/shipments">Shipments</Nav.Link></Link>
                   <Link href="/reports"><Nav.Link href="/">Reports</Nav.Link></Link>
                 </Nav>
                 <Nav className="nav-section2">
-                  <NavDropdown title="Documentation" id="navbarScrollingDropdown" className="navdropdown">
+                  <NavDropdown title="Documentation" id="navbarScrollingDropdown" className="navdropdown" show={show}
+                    onMouseEnter={showDropdown} 
+                    onMouseLeave={hideDropdown}>
                     <Link href="/forms/canadacustomsinvoice"><NavDropdown.Item href="#action3" className="nav-items" >Canada Customs Invoice</NavDropdown.Item></Link>
                     <Link href="/forms/uscustomsinvoice"><NavDropdown.Item href="#action4" className="nav-items">US Customs Invoice</NavDropdown.Item></Link>
                   <NavDropdown.Divider />
