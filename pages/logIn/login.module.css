@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  transition: 250ms ease-in-out;
 }
 
 .form {
@@ -14,6 +15,7 @@
   text-align: center; */
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  transition: 250ms ease-in-out;
 }
 
 .logo {
@@ -24,8 +26,27 @@
   margin: 5rem;
 }
 
-.logo_container {
+.upperForm {
   text-align: center;
+  position: relative;
+  transition: 250ms ease-in-out;
+}
+
+.upperFormBackButton {
+  position: absolute;
+  transition: 350ms ease-in-out;
+  cursor: pointer;
+  color: #002c71;
+}
+
+.upperFormBackButton:hover {
+  transform: scale(1.05);
+  transition: 350ms ease-in-out;
+}
+
+.backButton:hover {
+  transform: scale(1.05);
+  transition: 350ms ease-in-out;
 }
 
 .form button {
@@ -81,10 +102,18 @@
   color: #333;
 }
 
-.forgot {
+.forgotButton {
   color: #002c71;
   /* color: red; */
   text-decoration: none;
+  cursor: pointer;
+}
+
+.signupButton {
+  color: #002c71;
+  /* color: red; */
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .form button .oauthButton button {
@@ -103,7 +132,7 @@
 }
 
 .form button div {
-  transition: 350ms ease-in-out;
+  transition: 450ms ease-in-out;
 }
 
 .form button:hover {
@@ -112,5 +141,5 @@
 
 .form button:hover div {
   transform: scale(1.1);
-  transition: 350ms;
+  transition: 450ms;
 }
