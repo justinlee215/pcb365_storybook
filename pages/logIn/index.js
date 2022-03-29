@@ -10,10 +10,6 @@ import facebookLogo from '../../public/images/facebook_logo.png'
 import { ArrowLeftCircle } from 'react-bootstrap-icons'
 
 import { useTransition, useSpring, animated } from 'react-spring'
-
-
-
-// import { useSession, signIn, signOut, getSession, getCsrfToken } from "next-auth/react";
 import Link from 'next/link';
 
 import { Form, Button } from 'react-bootstrap'
@@ -132,17 +128,5 @@ export default function LogIn() {
             }
     </Form>
   </div>
-
   )
   }
-
-// export async function getServerSideProps(context) {
-//   // const session = await getSession(context);
-//   // console.log("session BED", session);
-//   const session = ""
-//   return {
-//     props: {
-//       session
-//     }
-//   }
-// }
