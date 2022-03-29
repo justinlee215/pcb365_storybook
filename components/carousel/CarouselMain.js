@@ -13,7 +13,7 @@ import Image from 'next/image'
 export default function CarouselMain() {
   return (
       <Carousel variant="dark" className="carousel">
-          <Carousel.Item interval={40} style={{ position: "absolute", left: "1000", top: "1000"}}>
+          <Carousel.Item interval={40} >
               <div className="largebox">
                   <Image src={trade1} width={1350} height={800} priority className="mainImage"></Image>
                   {/* <Card /> */}
@@ -25,7 +25,7 @@ export default function CarouselMain() {
 
           </Carousel.Item>
 
-          <Carousel.Item interval={40} style={{ position: "absolute"}}>
+          <Carousel.Item interval={40} >
               <div className="largebox">
                   <Image src={trade2} width={1350} height={800} priority className="mainImage"></Image>
                   {/* <Card /> */}
@@ -36,7 +36,7 @@ export default function CarouselMain() {
               </Carousel.Caption>
           </Carousel.Item>
 
-          <Carousel.Item interval={40} style={{ position: "absolute"}}>
+          <Carousel.Item interval={40} >
               <div className="largebox">
                   <Image src={trade3} width={1350} height={800} priority className="mainImage"></Image>
                   {/* <Card /> */}

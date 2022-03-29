@@ -114,7 +114,6 @@ main {
   min-height: 100vh;
   position: relative;
   max-width: 1200px;
-
 }
 
 img {
@@ -442,7 +441,7 @@ input a {
 
 .largebox {
   /* position: relative; */
- 
+
   /* margin: 0 0 0 170px; */
   background-color: lightcoral;
   /* border-radius: 0 0 0.3rem 0.3rem; */
@@ -463,14 +462,14 @@ input a {
   width: 400px;
   height: 400px;
   background-color: white;
-  position: absolute;
+  /* position: absolute; */
   left: 500px;
   top: 50px;
 }
 
-.mainImage img{
-  position: absolute;
-   left: 300;
+.mainImage img {
+  /* position: absolute; */
+  left: 300;
   top: 300;
 }
 
