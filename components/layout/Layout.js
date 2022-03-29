@@ -25,10 +25,7 @@ export default function Layout({children}) {
      setProgress(100)
      clearInterval(updateProgressHandler)
     }
-    setProgress(s => s+1)
-
-
-    
+    setProgress(s => s+1)    
    }, 50)
 
   return (
@@ -39,7 +36,6 @@ export default function Layout({children}) {
                 <Image
                   priority
                   src={logo}
-                
                   width={90}
                   height={56.5}
                   alt="image"
@@ -73,7 +69,7 @@ export default function Layout({children}) {
             </Container>
           </Navbar>
         <ProgressBar now={progress} variant="progressBar" style={{ borderRadius: "0", height: "1rem", backgroundColor: "white", left: "0", top: "200" }} />
-        <main>{children}</main>
+        {children}
 
         <footer>footer</footer>
     </>

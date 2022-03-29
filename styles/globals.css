@@ -110,7 +110,11 @@ main:focus {
 
 main {
   background-color: #0070f3;
-  margin: 0 10rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  max-width: 1200px;
+
 }
 
 img {
@@ -438,15 +442,36 @@ input a {
 
 .largebox {
   /* position: relative; */
-  margin: 0 60px 0 10vw;
+ 
+  /* margin: 0 0 0 170px; */
   background-color: lightcoral;
-  border-radius: 0 0 0.3rem 0.3rem;
-  display: flex;
+  /* border-radius: 0 0 0.3rem 0.3rem; */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border: 1px solid lightgray;
+  align-items: center; */
+  overflow: visible;
+  /* border: 1px solid lightgray; */
   background-color: lightcoral;
+  width: 70vw;
+}
+
+.carousel {
+  position: relative;
+}
+
+.textBox {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  left: 500px;
+  top: 50px;
+}
+
+.mainImage img{
+  position: absolute;
+   left: 300;
+  top: 300;
 }
 
 @media (max-width: 1350px) {
