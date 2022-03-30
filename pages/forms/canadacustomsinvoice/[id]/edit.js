@@ -14,6 +14,8 @@ import CanadaCustomsInvoice from "../../../../models/CanadaCustomsInvoice";
 
 import styles from "./../canadacustomsinvoice.module.css";
 
+import { ArrowRightShort, ArrowLeftShort } from "react-bootstrap-icons";
+
 export default function EditCanadaCustomsInvoice({ canadaCustomsInvoice }) {
   console.log("canada from edit: ", canadaCustomsInvoice);
   //steps indicating where button appears on different steps of forms
@@ -56,11 +58,6 @@ export default function EditCanadaCustomsInvoice({ canadaCustomsInvoice }) {
 
     console.log("Data Created on DB: ", response);
   };
-
-  const rightArrow =
-    "https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/next-arrow_1pmaQTqF3.svg?updatedAt=1634410703345";
-  const leftArrow =
-    "https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/back-arrow_ZBmeHiBP3.svg?updatedAt=1634410703363";
 
   const Input = ({ label, name, required, type, placeholder, value }) => (
     <Form.Group className="mb-3">
@@ -317,13 +314,12 @@ export default function EditCanadaCustomsInvoice({ canadaCustomsInvoice }) {
             setStep(step - 1);
           }}
         >
-          <img src={leftArrow} style={{ color: "white" }} />
+          <ArrowLeftShort size={22} />
           BACK
         </Button>
       )}
       {step === fieldGroups.length - 1 && (
         <Button type="submit" className={styles.button} disabled={!isValid}>
-          <img src={rightArrow} style={{ color: "white" }} />
           UPDATE
         </Button>
       )}
@@ -336,7 +332,7 @@ export default function EditCanadaCustomsInvoice({ canadaCustomsInvoice }) {
             setStep(step + 1);
           }}
         >
-          <img src={rightArrow} />
+          <ArrowRightShort size={22} />
           NEXT
         </Button>
       )}
@@ -373,7 +369,7 @@ export default function EditCanadaCustomsInvoice({ canadaCustomsInvoice }) {
       </Head>
       <main>
         <h1>Edit Canada Customs Invoice</h1>
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <Form onSubmit={handleSubmit(onSubmit)} className="fillupForm">
           {fieldGroups[step]}
           <Buttons />
           {/* <Reference/> */}

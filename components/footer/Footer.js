@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="container" id="footer">
-        <footer className="pt-1 my-md-5 pt-md-5 border-top ps-4">
+        <footer className="pt-1 mt-5 my-md-5 pt-md-5 border-top ps-4">
           <div className="row">
             <div className="col-12 col-md">
               <a className="navbar-brand" href="/">

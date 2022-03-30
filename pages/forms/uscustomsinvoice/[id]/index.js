@@ -71,7 +71,7 @@ export default function ({ usCustomsInvoice }) {
             <Link href={`/forms/uscustomsinvoice/${usCustomsInvoice._id}/edit`}>
               <Button className={styles.button}>Edit</Button>
             </Link>
-            <Button className={styles.button} onClick={handleClick}>
+            <Button className={styles.button2} onClick={handleClick}>
               Delete
             </Button>
           </div>

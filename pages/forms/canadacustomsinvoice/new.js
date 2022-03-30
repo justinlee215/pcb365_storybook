@@ -11,6 +11,8 @@ import { useState } from "react";
 
 import styles from "./canadacustomsinvoice.module.css";
 
+import { ArrowRightShort, ArrowLeftShort } from "react-bootstrap-icons";
+
 export default function CanadaCustomsInvoice({ ...props }) {
   // console.log("rendering from CanadaCustomsInvoice", count)
 
@@ -51,11 +53,6 @@ export default function CanadaCustomsInvoice({ ...props }) {
 
     console.log("Data Created on DB: ", response);
   };
-
-  const rightArrow =
-    "https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/next-arrow_1pmaQTqF3.svg?updatedAt=1634410703345";
-  const leftArrow =
-    "https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/back-arrow_ZBmeHiBP3.svg?updatedAt=1634410703363";
 
   const Input = ({ label, name, required, type, placeholder, value }) => (
     <Form.Group className="mb-3">
@@ -312,13 +309,12 @@ export default function CanadaCustomsInvoice({ ...props }) {
             setStep(step - 1);
           }}
         >
-          <img src={leftArrow} />
+          <ArrowLeftShort size={22} />
           BACK
         </Button>
       )}
       {step === fieldGroups.length - 1 && (
         <Button type="submit" className={styles.button} disabled={!isValid}>
-          <img src={rightArrow} />
           SUBMIT
         </Button>
       )}
@@ -331,7 +327,7 @@ export default function CanadaCustomsInvoice({ ...props }) {
             setStep(step + 1);
           }}
         >
-          <img src={rightArrow} />
+          <ArrowRightShort size={22} />
           NEXT
         </Button>
       )}
@@ -368,7 +364,7 @@ export default function CanadaCustomsInvoice({ ...props }) {
       </Head>
       <main>
         <h1>New Canada Customs Invoice</h1>
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <Form onSubmit={handleSubmit(onSubmit)} className="fillupForm">
           {fieldGroups[step]}
           <Buttons />
           {/* <Reference/> */}

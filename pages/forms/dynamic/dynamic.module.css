@@ -54,13 +54,15 @@
   max-width: 300px;
   min-height: 150px;
   min-width: 300px;
+  transition: 350ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  transform: scale(1.05);
+  transition: 350ms ease-in-out;
 }
 
 .card h2 {
@@ -88,6 +90,13 @@
 .button {
   height: 3.5rem;
   margin: 1.5rem 1rem 0 0;
+  background-color: #002c71;
+  border: none;
+}
+
+.button:focus,
+.button:active {
+  outline: none;
 }
 
 @media (max-width: 600px) {

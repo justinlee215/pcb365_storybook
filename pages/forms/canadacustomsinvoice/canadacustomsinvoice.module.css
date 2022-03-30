@@ -57,11 +57,15 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
 }
 
+.card {
+  transition: 350ms ease-in-out;
+}
+
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  transform: scale(1.05);
+  transition: 350ms ease-in-out;
 }
 
 .card h2 {
@@ -93,12 +97,34 @@
   border: none;
 }
 
+.button2 {
+  height: 3.5rem;
+  margin: 1.5rem 1rem 0 0;
+  background-color: #a6182d;
+  border: none;
+}
+
+.button2:hover,
+.button2:active {
+  background-color: #f82646;
+  border: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
 @media (max-width: 600px) {
   .formBox {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .createNewBox {
+    display: block;
+    padding: 1rem;
   }
 }
 
@@ -124,4 +150,7 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
   margin: 2rem 0;
   border-radius: 5px;
+}
+
+@media (max-width: 600px) {
 }

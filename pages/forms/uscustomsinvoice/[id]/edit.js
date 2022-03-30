@@ -373,7 +373,7 @@ export default function EditUSCustomsInvoice({ USCustomsInvoice }) {
       </Head>
       <main>
         <h2>US Customs Invoice</h2>
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <Form onSubmit={handleSubmit(onSubmit)} className="fillupForm">
           {fieldGroups[step]}
           <Buttons />
           {/* <Reference/> */}

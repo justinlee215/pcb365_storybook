@@ -67,11 +67,11 @@ export default function ({ canadaCustomsInvoice }) {
       <main>
         <div className={styles.createNewBox}>
           <h1 className={styles.title}>{formType}</h1>
-          <div>
+          <div className="editDelete">
             <Link href={`/forms/canadacustomsinvoice/${_id}/edit`}>
               <Button className={styles.button}>Edit</Button>
             </Link>
-            <Button className={styles.button} onClick={handleClick}>
+            <Button className={styles.button2} onClick={handleClick}>
               Delete
             </Button>
           </div>
