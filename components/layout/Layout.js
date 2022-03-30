@@ -67,12 +67,31 @@ export default function Layout({ children }) {
                 onMouseEnter={showDropdown}
                 onMouseLeave={hideDropdown}
               ></CustomDropdown>
-              <Link href="/shipments">
-                <Nav.Link href="/shipments">Shipments</Nav.Link>
-              </Link>
               <Link href="/reports">
                 <Nav.Link href="/">Reports</Nav.Link>
               </Link>
+              <NavDropdown
+                title="Shipments"
+                // id="navbarScrollingDropdown"
+                // className="navdropdown"
+              >
+                <Link href="/shipments/canada">
+                  <NavDropdown.Item href="#action3" className="nav-items">
+                    Shipments to Canada
+                  </NavDropdown.Item>
+                </Link>
+                <Link href="/shipments/us">
+                  <NavDropdown.Item href="#action4" className="nav-items">
+                    Shipments to US
+                  </NavDropdown.Item>
+                </Link>
+                <NavDropdown.Divider />
+                <Link href="/forms">
+                  <NavDropdown.Item href="#action5" className="nav-items">
+                    All Shipments
+                  </NavDropdown.Item>
+                </Link>
+              </NavDropdown>
             </Nav>
             <Nav className="nav-section2">
               <NavDropdown

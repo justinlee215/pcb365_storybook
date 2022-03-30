@@ -11,6 +11,8 @@ import { useState } from "react";
 
 import styles from "./uscustomsinvoice.module.css";
 
+import { ArrowRightShort, ArrowLeftShort } from "react-bootstrap-icons";
+
 export default function USCustomsInvoice({ ...props }) {
   //steps indicating where button appears on different steps of forms
   const [step, setStep] = useState(0);
@@ -49,11 +51,6 @@ export default function USCustomsInvoice({ ...props }) {
 
     console.log("Data Created on DB: ", response);
   };
-
-  const rightArrow =
-    "https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/next-arrow_1pmaQTqF3.svg?updatedAt=1634410703345";
-  const leftArrow =
-    "https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/back-arrow_ZBmeHiBP3.svg?updatedAt=1634410703363";
 
   const Input = ({ label, name, required, type, placeholder, value }) => (
     <Form.Group className="mb-3">
@@ -310,13 +307,12 @@ export default function USCustomsInvoice({ ...props }) {
             setStep(step - 1);
           }}
         >
-          <img src={leftArrow} />
+          <ArrowLeftShort size={22} />
           BACK
         </Button>
       )}
       {step === fieldGroups.length - 1 && (
         <Button type="submit" className={styles.button} disabled={!isValid}>
-          <img src={rightArrow} />
           SUBMIT
         </Button>
       )}
@@ -329,7 +325,7 @@ export default function USCustomsInvoice({ ...props }) {
             setStep(step + 1);
           }}
         >
-          <img src={rightArrow} />
+          <ArrowRightShort size={22} />
           NEXT
         </Button>
       )}

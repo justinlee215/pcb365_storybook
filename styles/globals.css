@@ -74,6 +74,7 @@ h1 {
 h2 {
   font-size: 2.2rem;
   margin: 1em 1rem 0.5em;
+  padding: 2rem 1rem;
   color: var(--dark);
 }
 
@@ -587,6 +588,7 @@ input a {
     margin-left: 5rem;
     width: 60%;
     /* background-color: lightblue; */
+    margin: 0 8rem 0 2rem;
   }
 
   .nav-section2 {

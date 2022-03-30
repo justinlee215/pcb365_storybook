@@ -75,7 +75,7 @@ export default function LogIn() {
                 className={styles.logo}
               />
             </Link>
-            <h3>Sign up</h3>
+            <h2>Sign up</h2>
           </div>
           <p>Please enter your infomation to sign up.</p>
           <Form.Group className="mb-12" controlId="formBasicEmail">
@@ -177,14 +177,14 @@ export default function LogIn() {
 
             {transition2((style, item) =>
               item ? (
-                <animated.h3 style={style}>Reset your password</animated.h3>
+                <animated.h2 style={style}>Reset your password</animated.h2>
               ) : (
                 ""
               )
             )}
 
             {transition2((style, item) =>
-              item ? "" : <animated.h3 style={style}>Log in</animated.h3>
+              item ? "" : <animated.h2 style={style}>Log in</animated.h2>
             )}
           </div>
 
