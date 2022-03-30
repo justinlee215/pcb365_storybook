@@ -39,7 +39,7 @@ export default function Layout({ children }) {
   }, 50);
 
   return (
-    <>
+    <div className="appWrapper">
       <Navbar sticky="top" className="navbar" expand="lg" variant="dark">
         <Container fluid>
           <Link href="/">
@@ -133,6 +133,6 @@ export default function Layout({ children }) {
       />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }

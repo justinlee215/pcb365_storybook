@@ -19,9 +19,7 @@ export default function Home() {
         <meta name="description" content="CSS Big Bang" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      {/* <main>
-        <CarouselMain />
-        </main> */}
+      <main>{/* <CarouselMain /> */}</main>
     </Layout>
   );
 }
