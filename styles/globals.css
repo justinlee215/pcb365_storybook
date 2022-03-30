@@ -439,13 +439,10 @@ input a {
   display: none;
 }
 
-
-
 .carousel {
   position: absolute;
   background-color: red;
 }
-
 
 .carousel-item {
   position: absolute;
@@ -494,6 +491,15 @@ input a {
     width: 50px;
     height: 200px;
     content: "hmmweofjweoijfweoijfewjfoj";
+  }
+
+  .nav-link {
+    margin-left: 3rem;
+  }
+
+  .dropdown-title {
+    margin-left: 4.3rem;
+    margin-bottom: 0.5rem;
   }
 }
 

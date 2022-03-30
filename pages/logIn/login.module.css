@@ -143,3 +143,9 @@
   transform: scale(1.1);
   transition: 450ms;
 }
+
+@media (max-width: 600px) {
+  .form {
+    width: 350px;
+  }
+}
