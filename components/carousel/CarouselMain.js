@@ -18,34 +18,14 @@ export default function CarouselMain() {
                   <Image src={trade1} width={1350} height={800} priority className="mainImage"></Image>
                   {/* <Card /> */}
               </div>
-              <Carousel.Caption className="textBox">
-                  <h5>First slide label</h5>
-                  <p>slide 1</p>
-              </Carousel.Caption>
-
-          </Carousel.Item>
-
-          <Carousel.Item interval={40} >
-              <div className="largebox">
-                  <Image src={trade2} width={1350} height={800} priority className="mainImage"></Image>
-                  {/* <Card /> */}
-              </div>
-              <Carousel.Caption className="textBox">
-                  <h5>Second slide label</h5>
-                  <p>slide 2</p>
+              <Carousel.Caption>
+                  <h2 style={{ marginBottom: "2rem"}}>Submit all of your trade documents online</h2>
+                  <p style={{ marginBottom: "2rem" }}>Take control of your complex trade forms using our eForms</p>
+                  <input type="text" style={{ marginBottom: "2rem"}}/>
+                  <Button style={{ width: "100%"}}>Start</Button>
               </Carousel.Caption>
           </Carousel.Item>
 
-          <Carousel.Item interval={40} >
-              <div className="largebox">
-                  <Image src={trade3} width={1350} height={800} priority className="mainImage"></Image>
-                  {/* <Card /> */}
-              </div>
-              <Carousel.Caption className="textBox">
-                  <h5>Third slide label</h5>
-                  <p>slide 3</p>
-              </Carousel.Caption>
-          </Carousel.Item>
       </Carousel>
   )
 }

@@ -439,44 +439,40 @@ input a {
   display: none;
 }
 
-.largebox {
-  /* position: relative; */
 
-  /* margin: 0 0 0 170px; */
-  background-color: lightcoral;
-  /* border-radius: 0 0 0.3rem 0.3rem; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  overflow: visible;
-  /* border: 1px solid lightgray; */
-  background-color: lightcoral;
-  width: 70vw;
-}
 
 .carousel {
+  position: absolute;
+  background-color: red;
+}
+
+
+.carousel-item {
+  position: absolute;
+  background-color: yellow;
+}
+
+.largebox {
+  background-color: lightcoral;
+  width: 70vw;
+
   position: relative;
+  left: 150px;
 }
 
-.textBox {
-  width: 400px;
-  height: 400px;
+.carousel-caption {
   background-color: white;
-  /* position: absolute; */
-  left: 500px;
-  top: 50px;
-}
-
-.mainImage img {
-  /* position: absolute; */
-  left: 300;
-  top: 300;
+  position: relative;
+  padding: 2rem;
+  left: 100px;
+  /* width: 300px;
+  bottom: 200px; */
 }
 
 @media (max-width: 1350px) {
-  .largebox {
+  /* .largebox {
     margin: 0 60px 0 10vw;
-  }
+  } */
 
   .card {
     padding: 1.5rem;
@@ -502,9 +498,9 @@ input a {
 }
 
 @media (max-width: 1000px) {
-  .largebox {
+  /* .largebox {
     margin: 0 100px 0 10vw;
-  }
+  } */
 
   .card {
     padding: 1.5rem;
