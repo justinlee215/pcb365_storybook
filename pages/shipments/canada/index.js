@@ -44,7 +44,7 @@ export default function ShipmentsToCanada() {
                   <td data-label="Reference" className="dd">234324343</td>
                   <td data-label="Customs Status Date/Time" className="dd">N/A</td>
                   <td data-label="Status" className="dd">Received</td>
-                  <td data-label="<CloudDownload />" className="dd">Yes</td>
+                  <td data-label="Download" className="dd">Yes</td>
                   <td data-label="Port of Entryl" className="dd">PACIFIC HWY/SURREY</td>
                   <td data-label="Carrier" className="dd">GRANDO LOGISTICS</td>
                   <td data-label="Cargo/PARS Number" className="dd">
@@ -59,7 +59,7 @@ export default function ShipmentsToCanada() {
                   <td data-label="Reference" className="dd">234324343</td>
                   <td data-label="Customs Status Date/Time" className="dd">Dec 11/2021</td>
                   <td data-label="Status" className="dd">Released</td>
-                  <td data-label="<CloudDownload />" className="dd">Yes</td>
+                  <td data-label="Download" className="dd">Yes</td>
                   <td data-label="Port of Entryl" className="dd">Archie</td>
                   <td data-label="Carrier" className="dd">Rainbow Inc.</td>
                   <td data-label="Cargo/PARS Number" className="dd">BSC2304902349</td>
