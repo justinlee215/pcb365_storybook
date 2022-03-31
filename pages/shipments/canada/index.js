@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 
-import { Table } from 'react-bootstrap'
+import { Table, Badge } from 'react-bootstrap'
 
 import Layout from "../../../components/layout/Layout";
 import { CloudDownload } from "react-bootstrap-icons";
@@ -43,7 +43,7 @@ export default function ShipmentsToCanada() {
                   <td data-label="Trans Number" className="dd">13292963424797</td>
                   <td data-label="Reference" className="dd">234324343</td>
                   <td data-label="Customs Status Date/Time" className="dd">N/A</td>
-                  <td data-label="Status" className="dd">Received</td>
+                <td data-label="Status" className="dd"><Badge bg="info">Received</Badge></td>
                   <td data-label="Download" className="dd">Yes</td>
                   <td data-label="Port of Entryl" className="dd">PACIFIC HWY/SURREY</td>
                   <td data-label="Carrier" className="dd">GRANDO LOGISTICS</td>
@@ -58,7 +58,7 @@ export default function ShipmentsToCanada() {
                   <td data-label="Trans Number" className="dd">77777</td>
                   <td data-label="Reference" className="dd">234324343</td>
                   <td data-label="Customs Status Date/Time" className="dd">Dec 11/2021</td>
-                  <td data-label="Status" className="dd">Released</td>
+                  <td data-label="Status" className="dd"><Badge bg="success">Released</Badge></td>
                   <td data-label="Download" className="dd">Yes</td>
                   <td data-label="Port of Entryl" className="dd">Archie</td>
                   <td data-label="Carrier" className="dd">Rainbow Inc.</td>
@@ -71,7 +71,7 @@ export default function ShipmentsToCanada() {
                   <td data-label="Trans Number" className="dd">77777</td>
                   <td data-label="Reference" className="dd">234324343</td>
                   <td data-label="Customs Status Date/Time" className="dd">Dec 11/2021</td>
-                  <td data-label="Status" className="dd">Released</td>
+                <td data-label="Status" className="dd"><Badge bg="success">Released</Badge></td>
                   <td data-label="<CloudDownload />" className="dd">Yes</td>
                   <td data-label="Port of Entryl" className="dd">Archie</td>
                   <td data-label="Carrier" className="dd">Rainbow Inc.</td>
@@ -84,7 +84,7 @@ export default function ShipmentsToCanada() {
                   <td data-label="Trans Number" className="dd">77777</td>
                   <td data-label="Reference" className="dd">234324343</td>
                   <td data-label="Customs Status Date/Time" className="dd">Dec 11/2021</td>
-                  <td data-label="Status" className="dd">Released</td>
+                <td data-label="Status" className="dd"><Badge bg="success">Released</Badge></td>
                   <td data-label="<CloudDownload />" className="dd">Yes</td>
                   <td data-label="Port of Entryl" className="dd">Archie</td>
                   <td data-label="Carrier" className="dd">Rainbow Inc.</td>

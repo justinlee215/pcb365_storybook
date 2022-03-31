@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 
-import { Table } from 'react-bootstrap'
+import { Table, Badge } from 'react-bootstrap'
 
 import Layout from "../../../components/layout/Layout";
 import { CloudDownload } from "react-bootstrap-icons";
@@ -43,7 +43,7 @@ export default function ShipmentsToUS() {
                 <td data-label="Trans Number">77777</td>
                 <td data-label="Reference">234324343</td>
                 <td data-label="Customs Status Date/Time">Dec 11/2021</td>
-                <td data-label="Status">Released</td>
+                <td data-label="Status"><Badge bg="info">Received</Badge></td>
                 <td data-label="<CloudDownload />">Yes</td>
                 <td data-label="Port of Entryl">Archie</td>
                 <td data-label="Carrier">Rainbow Inc.</td>
@@ -56,7 +56,7 @@ export default function ShipmentsToUS() {
                 <td data-label="Trans Number">77777</td>
                 <td data-label="Reference">234324343</td>
                 <td data-label="Customs Status Date/Time">Dec 11/2021</td>
-                <td data-label="Status">Released</td>
+                <td data-label="Status"><Badge bg="info">Received</Badge></td>
                 <td data-label="<CloudDownload />">Yes</td>
                 <td data-label="Port of Entryl">Archie</td>
                 <td data-label="Carrier">Rainbow Inc.</td>
@@ -69,7 +69,7 @@ export default function ShipmentsToUS() {
                 <td data-label="Trans Number">13292963424797</td>
                 <td data-label="Reference">234324343</td>
                 <td data-label="Customs Status Date/Time">N/A</td>
-                <td data-label="Status">Received</td>
+                <td data-label="Status"><Badge bg="success">Released</Badge></td>
                 <td data-label="<CloudDownload />">Yes</td>
                 <td data-label="Port of Entryl">PACIFIC HWY/SURREY</td>
                 <td data-label="Carrier">GRANDO LOGISTICS</td>
@@ -84,7 +84,7 @@ export default function ShipmentsToUS() {
                 <td data-label="Trans Number">77777</td>
                 <td data-label="Reference">234324343</td>
                 <td data-label="Customs Status Date/Time">Dec 11/2021</td>
-                <td data-label="Status">Released</td>
+                <td data-label="Status"><Badge bg="success">Released</Badge></td>
                 <td data-label="<CloudDownload />">Yes</td>
                 <td data-label="Port of Entryl">Archie</td>
                 <td data-label="Carrier">Rainbow Inc.</td>
