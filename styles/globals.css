@@ -451,20 +451,21 @@ input a {
 
 .carousel {
   position: absolute;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .carousel-item {
   position: absolute;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .largebox {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   width: 70vw;
 
   position: relative;
   left: 150px;
+  border-radius: 0 0 4px 4px;
 }
 
 .carousel-caption {
@@ -472,8 +473,10 @@ input a {
   position: relative;
   padding: 2rem;
   left: 100px;
-  /* width: 300px;
-  bottom: 200px; */
+  width: 400px;
+  top: 100px;
+  /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); */
+  border-radius: 4px;
 }
 
 @media (max-width: 1350px) {
@@ -774,4 +777,10 @@ input a {
     /* color: #fff; */
     font-weight: 600;
   }
+}
+
+.button {
+  background-color: var(--pcbColorBlue);
+  height: 3rem;
+  border-radius: 3px;
 }
