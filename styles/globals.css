@@ -670,7 +670,7 @@ input a {
 /************************************************* Responsive Table  *********************************/
 /*Mobile View*/
 
-table {
+.ble {
   width: 95%;
   /* table-layout: fixed; */
   border-collapse: collapse;
@@ -678,67 +678,100 @@ table {
   /* background-color: #0070f3; */
 }
 /* Zebra striping */
-tr:nth-of-type(odd) {
+.rr:nth-of-type(even) {
   background: #f2f2f2;
   /* background-color: yellow; */
 }
-th {
-  background: #494949;
-  color: #fff;
+.hh {
+  background: #f2f2f2;
+  /* color: #fff; */
   font-weight: 600;
 }
-td,
-th {
-  padding: 12px;
-  border: 1px solid #ccc;
+.dd,
+.hh {
+  padding: 12px 12px 0 12px;
+  /* border: 1px solid #ccc; */
   text-align: left;
   text-align: center;
 }
+
 /*Mobile View*/
-@media only screen and (max-width: 1010px) {
-  td,
-  tr {
+@media only screen and (max-width: 1210px) {
+  .dd,
+  .rr {
     display: block;
   }
 
   /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr {
+  .ead .rr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  tr {
-    border: 1px solid #e74c3c;
+
+  .rr {
+    /* border: 2px solid #e74c3c; */
+    margin: 0rem;
+    padding: 0rem;
+    /* border-radius: 5px; */
   }
 
-  tr + tr {
-    margin-top: 1.5em;
+  .rr + .rr {
+    margin-top: 2em;
     border-radius: 5px;
   }
 
-  td {
-    /* make like a "row" */
+  .dd {
     border: none;
-    border-bottom: 1px solid #eee;
     position: relative;
     padding-left: 50%;
-    background-color: gray;
+    background-color: rgb(243, 243, 243);
     text-align: left;
   }
 
-  table {
+  .ble {
     border-radius: 5px;
     /* background-color: orange; */
+    /* margin: 2rem;
+    padding: 2rem; */
   }
 
-  td:before {
-    content: attr(data-label);
+  .dd:before {
+    content: attr(data-label)":";
     display: inline-block;
-    line-height: 1.5;
+    line-height: 1.2;
     margin-left: -100%;
     width: 100%;
     white-space: nowrap;
-    background-color: yellow;
     padding: 0.2rem;
+      /* box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px; */
+
+  }
+
+  .dd:first-child, 
+  .hh:first-child {
+    padding-bottom: 14px;
+    border-radius: 15px 15px 0 0;
+      /* box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px; */
+
+  }
+
+  .dd:last-child, 
+  .hh:last-child {
+    padding-bottom: 14px;
+    border-radius: 0 0 15px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px; */
+
+  }
+
+  .rr:nth-of-type(even) {
+    background-color: rgb(243, 243, 243);
+    /* background-color: yellow; */
+  }
+
+  .hh {
+    background-color: rgb(243, 243, 243);
+    /* color: #fff; */
+    font-weight: 600;
   }
 }
