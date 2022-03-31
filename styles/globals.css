@@ -514,6 +514,44 @@ input a {
     margin-left: 4.3rem;
     margin-bottom: 0.5rem;
   }
+
+  main {
+    /* background-color: lightcoral; */
+  }
+
+
+.carousel {
+  position: relative;
+  /* background-color: red; */
+}
+
+.carousel-item {
+  position: relative;
+  /* background-color: yellow; */
+}
+
+.largebox {
+  /* background-color: lightcoral; */
+  width: 100vw;
+
+
+  position: relative;
+  left: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.carousel-caption {
+  background-color: white;
+  position: relative;
+  padding: 2rem;
+  height: 550px;
+  /* left: 100px; */
+  /* width: 400px; */
+  /* top: 100px; */
+  /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); */
+  border-radius: 4px;
+}
+
 }
 
 @media (max-width: 1000px) {
@@ -542,6 +580,45 @@ input a {
     height: 200px;
     content: "hmmweofjweoijfweoijfewjfoj";
   }
+
+  main {
+    min-height: 40vh;
+  }
+
+  
+.carousel {
+  position: relative;
+  /* background-color: red; */
+}
+
+.carousel-item {
+  position: relative;
+  /* background-color: yellow; */
+}
+
+.largebox {
+  /* background-color: lightcoral; */
+  width: 100vw;
+
+
+  position: relative;
+  left: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.carousel-caption {
+  background-color: white;
+  position: relative;
+  padding: 2rem;
+  height: 550px;
+  left: 100px;
+  display: none;
+  /* left: 100px; */
+  /* width: 400px; */
+  /* top: 100px; */
+  /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); */
+  border-radius: 4px;
+}
 }
 
 @media (min-width: 992px) {

@@ -29,7 +29,7 @@ export default function Footer() {
                 <li className="mb-1">Documentation </li>
                 <li className="mb-1">Your eForms List</li>
                 <li className="mb-1">Your Documentation</li>
-                <li className="mb-1">Your Cart</li>
+                {/* <li className="mb-1">Your Cart</li> */}
               </ul>
             </div>
             <div className="col-6 col-md">
@@ -45,19 +45,18 @@ export default function Footer() {
                     Unsplash
                   </a>
                 </li>
-                <li className="mb-2">Photo Artists</li>
+                <li className="mb-2">Tables</li>
                 <li className="mb-2">
-                  People vector Created by{" "}
+                  Join our teams!{" "}
                   <a className="text-muted" href="" target="_blank">
                     {" "}
-                    Freepik
                   </a>
                 </li>
                 <li className="mb-2">
                   {" "}
                   <a className="text-muted" href="" target="_blank">
                     {" "}
-                    Work
+                    Contacts
                   </a>
                 </li>
               </ul>
