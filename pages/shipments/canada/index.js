@@ -64,17 +64,19 @@ export default function ShipmentsToCanada() {
                   <td data-label="Client"> Vancouver City University</td>
                 </tr>
                 <tr>
-                  <td data-label="File Number">1234</td>
-                  <td data-label="Trans Number">77777</td>
+                  <td data-label="File Number">5008371</td>
+                  <td data-label="Trans Number">13292963424797</td>
                   <td data-label="Reference">234324343</td>
-                  <td data-label="Customs Status Date/Time">Dec 11/2021</td>
-                  <td data-label="Status">Released</td>
+                  <td data-label="Customs Status Date/Time">N/A</td>
+                  <td data-label="Status">Received</td>
                   <td data-label="<CloudDownload />">Yes</td>
-                  <td data-label="Port of Entryl">Archie</td>
-                  <td data-label="Carrier">Rainbow Inc.</td>
-                  <td data-label="Cargo/PARS Number">BSC2304902349</td>
+                  <td data-label="Port of Entryl">PACIFIC HWY/SURREY</td>
+                  <td data-label="Carrier">GRANDO LOGISTICS</td>
+                  <td data-label="Cargo/PARS Number">
+                    806SEU21CA220261 EITU9301816
+                  </td>
                   <td data-label="View">Yes</td>
-                  <td data-label="Client"> Vancouver City University</td>
+                  <td data-label="Client">300884 BRITISH COLUMBIA LIMIT</td>
                 </tr>
                 <tr>
                   <td data-label="File Number">1234</td>
