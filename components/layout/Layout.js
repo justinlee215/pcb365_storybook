@@ -86,9 +86,9 @@ export default function Layout({ children }) {
                   </NavDropdown.Item>
                 </Link>
                 <NavDropdown.Divider />
-                <Link href="/forms">
+                <Link href="/shipments/mexico">
                   <NavDropdown.Item href="#action5" className="nav-items">
-                    All Shipments
+                    Shipments to Mexico
                   </NavDropdown.Item>
                 </Link>
               </NavDropdown>
