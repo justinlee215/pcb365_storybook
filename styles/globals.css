@@ -817,7 +817,7 @@ input a {
   }
 
   .dd:before {
-    content: attr(data-label)":";
+    content: attr(data-label);
     display: inline-block;
     line-height: 1.2;
     margin-left: -100%;
