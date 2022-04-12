@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=55143c356794"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -45,7 +46,8 @@
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "eslint-plugin-storybook": "^0.5.8",
-    "msw": "^0.39.2"
+    "msw": "^0.39.2",
+    "storybook-addon-designs": "^6.2.1"
   },
   "msw": {
     "workerDirectory": "public"
