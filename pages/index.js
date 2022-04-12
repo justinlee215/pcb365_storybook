@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
       <main>
         <CarouselMain />
-        </main>
+      </main>
     </Layout>
   );
 }
