@@ -397,6 +397,21 @@ input a {
   /* height: 100px; */
 }
 
+.navbar-primary {
+  color: white;
+  background-color: #002c71;
+}
+
+.navbar-secondary {
+  color:#002c71;
+  background-color: var(--pcbColorRed);
+}
+
+.navbar-large {
+  font-size: 22px;
+  padding: 12px;
+}
+
 .navbar-toggle {
   transition: ease-in-out 0.2s;
 }

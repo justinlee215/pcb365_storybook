@@ -10,9 +10,15 @@ import { useState } from "react";
 import { Person } from "react-bootstrap-icons";
 
 import logo from "../../public/images/whitelogo.png";
-import { propTypes } from "react-bootstrap/esm/Image";
+import PropTypes from "prop-types";
 
-export default function NavBar() {
+export default function NavBar({
+  backgroundColor,
+  primary,
+  size,
+  label,
+  ...props
+}) {
   const [show, setShow] = useState(false);
 
   const hideDropdown = (e) => {
@@ -23,8 +29,15 @@ export default function NavBar() {
     setShow(!show);
   };
 
+  const mode = primary ? "navbar-secondary" : "navbar-primary";
+
   return (
-    <Navbar sticky="top" className="navbar" expand="lg" variant="dark">
+    <Navbar
+      sticky="top"
+      className={["navbar", `navbar-${size}`, mode].join(" ")}
+      expand="lg"
+      variant="dark"
+    >
       <Container fluid>
         <Link href="/">
           <Navbar.Brand href="/" className="logo">
@@ -125,6 +138,16 @@ export default function NavBar() {
 }
 
 NavBar.propTypes = {
-  backgroundColor: propTypes.string,
-  // onClick: propTypes.func
+  primary: PropTypes.bool,
+  backgroundColor: PropTypes.string,
+  size: PropTypes.oneOf(["small", "medium", "large"]),
+  label: PropTypes.string,
+  onClick: PropTypes.func,
+};
+
+NavBar.defaultProps = {
+  backgroundColor: null,
+  primary: false,
+  size: "large",
+  onClick: undefined,
 };
